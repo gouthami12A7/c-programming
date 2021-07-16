@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+	int w,h,perimeter1,area1,r,perimeter2,area2;
+	h = 3;
+	w = 7;
+	r = 2;
+	perimeter1 = 2*(h+w);
+	printf("perimeter1 of the rectangle=%dinches\n",perimeter1);
+	area1 = h*w;
+	printf("area1 of the rectangle=%dsquareinches\n",area1);
+	perimeter2 = 2*3.14*r;
+	printf("perimeter2 of a circle=%finches\n",perimeter2);
+	area2 = 3.14*r*r;
+	printf("area2 of the circle =%fsquareincher\n",area2);
+	return 0;
+}
