@@ -1,0 +1,13 @@
+//Program to check whether the entered character is digit or not using conditional operator
+#include<stdio.h>
+int main()
+{
+	char c;
+    int digit;  
+    printf("Enter a Character\n");  
+    scanf("%c", &c); 
+    digit =  ((c >= '0') && (c <= '9'))? 1 : 0;  
+    printf("digit is %d",digit);
+    return 0;  
+
+}

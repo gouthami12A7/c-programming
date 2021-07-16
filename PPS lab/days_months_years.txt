@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main()
+{
+	int days,months,years,d;
+	printf("Enter number of days:");
+	scanf("%d",&days);
+	years = days /365;
+	months = (days - (years*365))/30;
+	d = (days - (years*365)-(months*30));
+	printf("\n %d years",years);
+	printf("\n %d months",months );
+	printf("\n %d days",days);
+	return 0;
+}

@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int empID,h,amtperh;
+	float salary;
+	printf("\nEmployees ID:");
+	scanf("%d",&empID);
+	printf("\n worked hours and amount received in a month: ");
+	scanf("%d%d",&h,&amtperh);
+	printf("salary in the month=%.2f",salary,h,amtperh);
+	return 0;
+}
