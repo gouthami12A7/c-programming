@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int w,c,n,totalweight,totalcost;
+	printf("enter items weight:");
+	scanf("%d",&w);
+	printf("\nenter items cost:");
+	scanf("%d",&c);
+	printf("\nenter items number of units purchased:");
+	scanf("%d",&n);
+	totalweight = n*w;
+	printf("totalweight=%d",totalweight);
+	totalcost=n*c;
+	printf("totalcost=%d",totalcost);
+	return 0;
+	
+	
+}

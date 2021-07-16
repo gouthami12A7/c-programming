@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+	int f,s,t;
+	printf("Enter the value of first and second angle\n");
+	scanf("%d %d",&f,&s);
+	t = 180 - (f+s);
+	printf("The value of thirt angle is %d",t);
+	return 0;
+}

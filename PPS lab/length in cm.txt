@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	float cm,m,km;
+	printf("Enter the value in cm:");
+	scanf("%f",&cm);
+	m = cm/100;
+	km = cm/100000;
+	printf("the converted value m - %f",m);
+	printf("the converted value km - %f",km);
+	return 0;
+}
