@@ -1,0 +1,13 @@
+#include<stdio.h>
+int main()
+{
+	int a,b,c;
+	printf("\n Enter two numbers:");
+	scanf("%d%d",&a,&b);
+	printf("\n before swap of a,b = %d %d",a,b);
+	c=a;
+	a=b;
+	b=c;
+	printf("\n after swapping:%d %d",a,b);
+	return 0;
+}

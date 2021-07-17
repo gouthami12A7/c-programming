@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("Enter num:");
+	scanf("%d%d",&a,&b);
+	printf("memory address :%u,%u",&a,&b);
+	return 0;
+}
