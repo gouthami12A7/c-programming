@@ -1,0 +1,10 @@
+//.  Program to extract the digit in one's place of an integer 
+#include<stdio.h>
+int main()
+{
+	int num;
+	printf("\n Enter a number:");
+	scanf("%d",&num);
+	printf("\n The digit in ones place is :%d",num%10);
+	return 0;
+}
