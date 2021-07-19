@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+	int size;
+	unsigned int x;
+	size = sizeof(x);
+	printf("\n size of x =%d",size);
+	return 0;
+	
+}
