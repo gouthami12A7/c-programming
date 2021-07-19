@@ -1,0 +1,17 @@
+//. Program using string inbuilt functions(strlen ,strcat, strcmp, strncat, strnpy)
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char W1[20];
+	int ans;
+	printf("\Enter the W1:");
+	gets(W1);
+	printf("\nEnter the W2:");
+	gets(W2);
+	printf("\n Enter the number:");
+	scanf("%d",&n);
+	strcat(W1,W2,n);
+	printf("W1 after contatenation:%s",W1);
+	
+}

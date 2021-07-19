@@ -1,0 +1,13 @@
+//. Program using string inbuilt functions(strlen ,strcat, strcmp, strncat, strnpy)
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char W1[50],W2[20],ans;
+	printf("\n Enter the W1:");
+	gets(W1);
+	printf("\nEnter the W2:");
+	gets(W2);
+	strcat(W1,W2);
+	printf("W1 After concatenation is %s",W1);
+}

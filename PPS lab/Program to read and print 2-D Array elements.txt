@@ -1,0 +1,24 @@
+//.   Program to read and print 2-D Array elements
+#include<stdio.h>
+int main()
+{
+	int A[10][10],i=0,j=0,r,c;
+  
+       printf("enter the number of rows\n");
+       scanf("%d",&r);
+       printf("enter the number of columns\n");
+	   scanf("%d",&c);  
+       printf("\nEnter the number:");
+  for(i=0;i<r;i++)
+  {
+      for(j=0;j<c;j++)
+       scanf("%d",&A[i][j]);
+      
+  }  
+  for(i=0;i<r;i++)
+  {
+      printf("\n");
+      for(j=0;j<c;j++)
+           printf("%d\t",A[i][j]);
+  }
+}

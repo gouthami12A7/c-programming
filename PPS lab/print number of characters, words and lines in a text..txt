@@ -1,0 +1,28 @@
+//Program to print number of characters, words and lines in a text.
+#include<stdio.h>
+int main()
+{
+	char Mstring[50],ch1,lines=0,words=0;
+	int i=0,ans;
+	printf("\nEnter the multiple line string:");
+	ch1='#';
+	while(ch1!='$')
+	{
+		ch1=getchar();
+		Mstring[i]=ch1;
+		i++;
+	}	
+	Mstring[--i]='\0';
+	printf("\n the string is");
+	puts(Mstring);
+	printf("\n the number of characters %d",i+1);
+	for(i=0;Mstring[i]!='\0';i++)
+	{
+		if(Mstring[i]=='\n')
+		lines++;
+		if(Mstring[i]=='\n'||Mstring[i]=='\n'||Mstring[i]=='\0');
+		words++;
+	}
+	printf("\n the number of lines = %d",lines+1);
+	printf("\n the number of words = %d",words);
+}

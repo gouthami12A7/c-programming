@@ -1,0 +1,12 @@
+//. Program using string inbuilt functions(strlen ,strcat, strcmp, strncat, strnpy)
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char W1[20];
+	int ans;
+	printf("\nEnter the word:");
+	gets(W1);
+	ans=strlen(W1);
+	printf("\n length of string = %d",ans);
+}

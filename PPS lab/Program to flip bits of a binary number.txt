@@ -1,0 +1,9 @@
+//Program to flip bits of a binary number
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("\nEnter the number:");
+	scanf("%d",&a);
+	printf("%d",~a);
+}

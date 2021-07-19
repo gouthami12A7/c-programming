@@ -1,0 +1,15 @@
+//Write a C program, which takes a character  (F or M) from the user and prints the Gender as Male or Female
+#include<stdio.h>
+int main()
+{
+	char a,F,M;
+	printf("Enter F and M as per your gender:");
+	scanf("%c",&a);
+	switch(a)
+	{
+		case 'F':printf("GENDER is FEMALE");
+		break;
+		case 'M':printf("GENDER is MALE");
+		break;
+	}
+}
