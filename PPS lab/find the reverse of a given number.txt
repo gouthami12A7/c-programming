@@ -1,0 +1,15 @@
+//To find the reverse of a given number
+#include<stdio.h>
+int main()
+{
+	int x,y;
+	printf("Enter the number:");
+	scanf("%d",&x);
+	printf("reverse of numberis:");
+	while(x>=1)
+	{
+		y= x%10;
+		printf("%d",y);
+		x=x/10;	
+	}
+}

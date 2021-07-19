@@ -1,0 +1,29 @@
+//Write a C program to input marks of 3 subjects Physics, Mathematics and PPS, calculate percentage and grade 
+#include<stdio.h>
+int main()
+{
+	int pps,maths,physics;
+	float p,total;
+	printf("\n Enter marks scored in pps:");
+	scanf("%d",&pps);
+	printf("\n enter marks scored in maths:");
+	scanf("%d",&maths);
+	printf("\n ente rmarks scored in physic:");
+	scanf("%d",&physics);
+	total = pps+maths+physics;
+	p=(total/300)*100;
+	if(p>=90)
+	printf("\n percentage = %f Grade A",p);
+	else if(p>=80&&p<90)
+	printf("\n percentage = %f Grade B",p);
+	else if(p>=70&&p<80)
+	printf("\n percentage = %f Grade C",p);
+	else if(p>=60&&p<70)
+	printf("\n percentage = %f Grade D",p);
+	else if(p>=40&&p<60)
+	printf("\n percentage = %f Grade E",p);
+	else
+	printf("\n percentage = %f Grade F",p);
+	return 0;
+	
+}
