@@ -1,0 +1,20 @@
+//structure of student details*//
+#include<stdio.h>
+struct student
+{
+	char name[50];
+	int rno;
+	int percentage;
+}s,*ptr;
+int main()
+{
+	ptr = &s;
+	printf("Enter the name of student:");
+	scanf("%s",&ptr->name);
+	printf("Enter the rno:");
+	scanf("%d",&ptr->rno);
+	printf("Enter the percentage:");
+	scanf("%d",&ptr->percentage);
+	printf("name:%s  rno:%d percentage:%d",ptr->name,ptr->rno,ptr->percentage);
+	return 0;
+}

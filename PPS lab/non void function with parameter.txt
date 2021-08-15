@@ -1,0 +1,21 @@
+//*non void function with parameter*//
+#include<stdio.h>
+int factorial(int n);
+int main()
+{
+	int n,res;
+	printf("\n\nEnter n:");
+	scanf("%d",&n);
+	printf("\n\n Iam going to function factorial Bye!");
+	res = factorial(n);
+	printf("\n I am back! in function main");
+	printf("\n factorial of %d is %d",n,res);	
+}
+int factorial(int x)
+{
+	int fact=1,i;
+	printf("\n\n Hello I'm in function factorial");
+	for(i=0;i<=x;i++)
+	fact = fact * i;
+	return fact;
+}

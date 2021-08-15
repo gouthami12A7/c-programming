@@ -1,0 +1,17 @@
+//*program using malloc(),reallo(),free functions
+#include<stdio.h>
+#include<stdlib.h>
+int main()
+{
+	int *a;
+	a = (int*)malloc(sizeof(int));
+	*a=50;
+	printf("\na=%d",*a);
+	a=(int*)realloc(a,5*sizeof(int));
+	*a=100;
+	printf("\n a=%d",*a);
+	printf("\n reallocate to 5*4 bytes");
+	free(a); 
+	printf("\n a=%d",*a);
+	return 0;
+}

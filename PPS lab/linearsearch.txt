@@ -1,0 +1,41 @@
+//*LinearSearch*//
+#include<stdio.h>
+void printArray(int[],int);
+int LineraSearch(int[],int,int);
+int main()
+{
+	int A[10],i,n,key,pos,res;
+	printf("Enter number:");
+	scanf("%d",&n);
+	printf("Enter %d number",n);
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&A[i]);
+	}
+	printf("\n");
+	printArray(A,n);
+	printf("Enter key to search");
+	scanf("%d",&key);
+	pos = LineraSearch(A,n,key);
+	printf("\n");
+	printf("Element %d found at position %d",key,pos);
+	return 0;
+}
+void printArray(int num[],int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+		printf("%5d",num[i]);
+	}
+}
+int LinearSearch(int A[],int n,int key)
+{
+	int i;
+	for(i=0;i<n;i++)
+	{
+		if(key==A[i])
+		return i+1;
+	}
+	return -1;
+}

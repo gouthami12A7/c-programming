@@ -1,0 +1,32 @@
+//*complex array pointer*//
+#include<stdio.h>
+struct complex
+{
+	int real;
+	int imaginary;
+	
+}*ptr;
+int main()
+{
+	struct complex A[10];
+	int i,n;
+	printf("Enter the size of array");
+	ptr = A;
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("Enter the real part");
+		scanf("%d",&ptr->real);
+		printf("Enter the imaginary part");
+		scanf("%d",&ptr->imaginary);
+		ptr++;
+	}
+	printf("\n complex number are");
+	ptr = A;
+	for(i=0;i<n;i++)
+	{
+		printf("\n %d + i%d",ptr->real,ptr->imaginary);
+		ptr++;
+	}
+	return 0;
+}

@@ -1,0 +1,23 @@
+//*array to functios(read and print elements)*//
+#include<stdio.h>
+void printArray(int *,int);
+int main()
+{
+	int A[3],i,n;
+	printf("Enter n value");
+	scanf("%d",&n);
+	printf("Enter the number of elements");
+	for(i=0;i<n;i++)
+	{
+		scanf("%d",&A[i]);
+	}
+	printf("\n");
+	printArray(A,n);
+	return 1;
+}
+void printArray(int *ptr,int n)
+{
+	int i;
+	for(i=0;i<n;i++)
+	printf("%5d",*(prt+i));
+}
